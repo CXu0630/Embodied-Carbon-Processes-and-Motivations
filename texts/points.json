@@ -1,29 +1,38 @@
 [
   {
-    "id": 1,
-    "title": "The Azure Citadel",
-    "file": "azure-citadel.md",
-    "x": 750,
+    "id": 11,
+    "title": "Capital Stack and European Capital",
+    "file": "capital-stack.md",
+    "x": 2085,
+    "y": 564,
+    "width": 226,
+    "height": 50
+  },
+  {
+    "id": 21,
+    "title": "European Sustainable Finance Disclosure",
+    "file": "eu-disclosure.md",
+    "x": 916,
+    "y": 564,
+    "width": 227,
+    "height": 50
+  },
+  {
+    "id": 22,
+    "title": "European Multinational Corporation Disclosure",
+    "file": "eu-multinational.md",
+    "x": 409,
     "y": 550,
-    "width": 100,
-    "height": 100
+    "width": 185,
+    "height": 75
   },
   {
-    "id": 2,
-    "title": "Echo Canyon",
-    "file": "echo-canyon.md",
-    "x": 2150,
-    "y": 350,
-    "width": 150,
-    "height": 150
-  },
-  {
-    "id": 3,
-    "title": "Port Helios",
-    "file": "port-helios.md",
-    "x": 350,
-    "y": 1450,
-    "width": 200,
-    "height": 150
+    "id": 12,
+    "title": "ESG Investing Incentives",
+    "file": "esg-incentives.md",
+    "x": 2084,
+    "y": 788,
+    "width": 230,
+    "height": 137
   }
 ]
