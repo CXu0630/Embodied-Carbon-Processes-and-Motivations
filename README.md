@@ -1,18 +1,13 @@
-# React + Vite
+## A Tentative Anatomy of Embodied Carbon Processes and Motivations
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is anxiety-inducing (to say the least) to watch as our world huddles towards (or perhaps even past) the point of no return in terms of climate change. Coming from an architecture background, I wanted to gain a better understanding of points of action within the Architecture, Engineering, and Construction (AEC) industry to facilitate and encourage carbon reductions.
 
-Currently, two official plugins are available:
+In architecture, a building's carbon footprint is referred to as its Whole Building Life Cycle (WBLC) emissions. This is, in turn, comprised of operational and embodied carbon. Operational carbon refers only to the emissions generated through usage of the building (for instance, when inhabitants consume electricity or gas). Embodied carbon is everything else, including emissions from the production and transport of construction materials, the actual construction process, and material replacement and disposal. Embodied carbon is considered to be more immediately relevant given our current very limited timeframe to take action.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This research tries to parse the current processes, actors, and motivations involved in embodied carbon in the AEC industry to identify points of action. This research currently comprises two documents: A (Tentative) Anatomy of Embodied Carbon Data in Architecture and A (Tentative) Anatomy of Embodied Carbon Motivations in Architecture. 
 
-## React Compiler
+A (Tentative) Anatomy of Embodied Carbon Data in Architecture presents a more fundamental view of the building construction process. It attempts to relate that process with the documents and calculations involved to tally carbon emissions. Since analysis is the first step to action, a lack of carbon calculations presents the first roadblock to reducing embodied carbon. This document also identifies missing links among actors, documents, and data flow that would facilitate carbon calculation. 
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+However, it soon became clear to me that better efficiency in carbon calculations is a limited path of action. Without funding from the client or regulation to prompt them, even the most morally steadfast designers and engineers would find it hard to invest the significant resources required for carbon calculations. This discovery motivates the focus of the second document.
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A (Tentative) Anatomy of Embodied Carbon Motivations in Architecture describes the contractual relationships between the primary actors in AEC (a map of agency) and connects actors to existing financial and regulatory motivations regarding carbon. This document discusses both embodied and operational carbon since existing frameworks and tools for reducing operational carbon provide reference for future propositions regarding embodied carbon. I also included callouts and annotations regarding places for improvement and potential action.
