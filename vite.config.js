@@ -10,4 +10,5 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/Embodied-Carbon-Processes-and-Motivations/',
 })
