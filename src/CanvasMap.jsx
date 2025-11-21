@@ -64,6 +64,16 @@ const MarkdownRenderer = ({ content, onLinkClick }) => {
         if (trimmed.startsWith('## ')) 
           return <h2 key={index} className="text-xl font-semibold text-gray-800 mt-6 mb-2">{parseInline(trimmed.slice(3))}</h2>;
         
+        if (trimmed.startsWith('### '))
+          return (
+            <h3
+              key={index}
+              className="text-lg font-semibold text-gray-700 mt-4 mb-1"
+            >
+              {parseInline(trimmed.slice(4))}
+            </h3>
+          );
+
         if (trimmed.startsWith('> '))
           return <blockquote key={index} className="border-l-4 border-gray-300 pl-4 italic text-gray-500 my-4">{parseInline(trimmed.slice(2))}</blockquote>;
         
@@ -301,7 +311,7 @@ export default function CanvasMap() {
       <div className="flex items-center justify-center h-screen bg-gray-50 text-gray-400">
         <div className="flex flex-col items-center gap-4">
             <Loader className="animate-spin" size={48} />
-            <p className="text-lg tracking-widest uppercase text-gray-500">Initializing Sector...</p>
+            <p className="text-lg tracking-widest uppercase text-gray-500">Initializing...</p>
         </div>
       </div>
     );
@@ -341,7 +351,7 @@ export default function CanvasMap() {
           {points.map((point) => (
             <div
               key={point.id}
-              className={`absolute border-2 border-transparent hover:border-gray-400/50 hover:bg-black/5 transition-colors cursor-pointer z-10
+              className={`absolute border-2 border-transparent hover:border-gray-400/50 hover:bg-black/15 transition-colors cursor-pointer z-10
                 ${selectedId === point.id ? 'border-black bg-black/5' : ''}
               `}
               style={{ 
