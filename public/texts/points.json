@@ -9,6 +9,15 @@
     "height": 50
   },
   {
+    "id": 12,
+    "title": "ESG Investing Incentives",
+    "file": "esg-incentives.md",
+    "x": 2084,
+    "y": 788,
+    "width": 230,
+    "height": 137
+  },
+  {
     "id": 21,
     "title": "European Sustainable Finance Disclosure",
     "file": "eu-disclosure.md",
@@ -25,14 +34,5 @@
     "y": 550,
     "width": 185,
     "height": 75
-  },
-  {
-    "id": 12,
-    "title": "ESG Investing Incentives",
-    "file": "esg-incentives.md",
-    "x": 2084,
-    "y": 788,
-    "width": 230,
-    "height": 137
   }
 ]
