@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Map, X, ChevronRight, ZoomIn, ZoomOut, Loader } from 'lucide-react';
+import { Map, X, ChevronRight, ZoomIn, ZoomOut, Loader, Home, Key } from 'lucide-react';
 
 // Set up constants
 const MIN_SCALE = 0.2;
@@ -11,7 +11,7 @@ const INTRO_CONTENT = `
 ## A Tentative Anatomy of Embodied Carbon Motivations
 Chloe Xu | Nov 2025 | gcx@andrew.cmu.edu
 [GitHub Repository](https://github.com/CXu0630/Embodied-Carbon-Processes-and-Motivations)
->+ Description | This is a research and mapping exercise aimed at illustrating the embodied carbon calculation process in conjunction with building design and construction stages. The project dives into the relationships and motivations of primary actors to identify potential places of action.
+>+ Description | This is a research and mapping exercise aimed at illustrating the embodied carbon calculation process in conjunction with building design and construction stages in the United States. The project dives into the relationships and motivations of primary actors to identify potential places of action.
 
 ![Map Key|150px](images/key.jpg)
 `;
@@ -214,6 +214,7 @@ export default function CanvasMap() {
   const [selectedId, setSelectedId] = useState(null);
   const [activeContent, setActiveContent] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [isIntroOpen, setIsIntroOpen] = useState(true);
 
   // 4. Refs for Drag Math
   const dragStartRef = useRef({ x: 0, y: 0 });
@@ -506,56 +507,62 @@ export default function CanvasMap() {
           ))}
         </div>
 
-        {/* Floating UI Controls */}
-        {/* Floating UI Controls */}
-        <div className="absolute top-6 left-6 z-40 flex flex-col gap-4 pointer-events-none">
-           {/* CHANGED: Replaced hardcoded HTML with MarkdownRenderer using INTRO_CONTENT */}
-           <div className="bg-white/90 backdrop-blur text-gray-900 p-4 rounded-lg shadow-lg border border-gray-200 w-[250px] pointer-events-auto">
-              <MarkdownRenderer 
-                content={INTRO_CONTENT} 
-                onLinkClick={focusOnPoint} 
-                onImageClick={setSelectedImage}
-              />
-           </div>
+        {/* --- Floating Intro / Legend Panel (Left) --- */}
+        <div className="absolute top-6 left-0 z-40 flex flex-col items-start pointer-events-none">
+           {/* Collapsed Tab */}
+           {!isIntroOpen && (
+             <button 
+               className="pointer-events-auto bg-white py-3 pl-1 pr-3 rounded-r-lg shadow-md border-y border-r border-gray-200 hover:bg-gray-50 text-gray-700 transition-colors flex items-center"
+               onClick={() => setIsIntroOpen(true)}
+               title="Show Info"
+             >
+               <ChevronRight size={24} />
+             </button>
+           )}
 
-           <div className="flex flex-col bg-white/90 backdrop-blur border border-gray-200 rounded-lg shadow-lg overflow-hidden pointer-events-auto w-10">
-              <button
-                onClick={() => handleZoom(0.2)}
-                className="p-2 bg-white border-b border-gray-200 hover:bg-gray-100 text-gray-900 active:bg-gray-200 transition-colors"
-                title="Zoom In"
-              >
-                <ZoomIn size={20} />
-              </button>
-
-              <div className="text-xs text-center py-1 text-gray-400 bg-white select-none">
-                {Math.round(scale * 100)}%
-              </div>
-
-              <button
-                onClick={() => handleZoom(-0.2)}
-                className="p-2 bg-white border-t border-gray-200 hover:bg-gray-100 text-gray-900 active:bg-gray-200 transition-colors"
-                title="Zoom Out"
-              >
-                <ZoomOut size={20} />
-              </button>
-            </div>
+           {/* Expanded Panel */}
+           {isIntroOpen && (
+             <div className="pointer-events-auto ml-6 bg-white/90 backdrop-blur text-gray-900 p-4 rounded-lg shadow-xl border border-gray-200 max-w-[280px] animate-in fade-in slide-in-from-left-4 duration-300 relative">
+                <button 
+                    className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition-colors p-1"
+                    onClick={() => setIsIntroOpen(false)}
+                >
+                    <X size={16} />
+                </button>
+                <MarkdownRenderer 
+                  content={INTRO_CONTENT} 
+                  onLinkClick={focusOnPoint} 
+                  onImageClick={setSelectedImage}
+                />
+             </div>
+           )}
         </div>
+
+        {/* --- Floating Zoom Controls (Top Right) --- */}
+        <div className="absolute top-6 right-6 z-40 flex flex-col bg-white/90 backdrop-blur border border-gray-200 rounded-lg shadow-lg overflow-hidden pointer-events-auto w-10">
+          <button
+            onClick={() => handleZoom(0.2)}
+            className="p-2 bg-white border-b border-gray-200 hover:bg-gray-100 text-gray-900 active:bg-gray-200 transition-colors"
+            title="Zoom In"
+          >
+            <ZoomIn size={20} />
+          </button>
+
+          <div className="text-xs text-center py-1 text-gray-400 bg-white select-none">
+            {Math.round(scale * 100)}%
+          </div>
+
+          <button
+            onClick={() => handleZoom(-0.2)}
+            className="p-2 bg-white border-t border-gray-200 hover:bg-gray-100 text-gray-900 active:bg-gray-200 transition-colors"
+            title="Zoom Out"
+          >
+            <ZoomOut size={20} />
+          </button>
+        </div>
+
       </div>
 
-      {/* --- Side Detail Panel --- */}
-      {/* <div className={`absolute right-0 top-0 h-full w-full md:w-[600px] bg-white/95 backdrop-blur-md border-l border-gray-200 shadow-2xl z-50 transform transition-transform duration-500 ease-in-out ${selectedId ? 'translate-x-0' : 'translate-x-full'}`}>
-        {selectedId ? (
-          <div className="flex flex-col h-full relative">
-            <div className="absolute top-0 right-0 p-4 z-10 bg-gradient-to-b from-white to-transparent w-full flex justify-end">
-               <button onClick={closePanel} className="p-2 bg-gray-100 hover:bg-gray-200 text-gray-900 rounded-full transition-colors shadow-md"><X size={20} /></button>
-            </div>
-
-            <div className="p-8 pt-12 overflow-y-auto custom-scrollbar h-full">
-              <MarkdownRenderer content={activeContent} onLinkClick={focusOnPoint} />              
-            </div>
-          </div>
-        ) : null}
-      </div> */}
       {/* --- Side Detail Panel --- */}
       <div
         className={`
@@ -577,16 +584,14 @@ export default function CanvasMap() {
 
             <div className="p-8 pt-12 overflow-y-auto custom-scrollbar h-full">
               <MarkdownRenderer 
-              content={activeContent} 
-              onLinkClick={focusOnPoint} 
-              onImageClick={setSelectedImage}
+                content={activeContent} 
+                onLinkClick={focusOnPoint}
+                onImageClick={setSelectedImage} 
               />
             </div>
           </div>
         ) : null}
       </div>
-
-
     </div>
   );
 }
