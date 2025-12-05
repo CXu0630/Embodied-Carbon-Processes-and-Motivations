@@ -1,6 +1,6 @@
 [
   {
-    "id": 11,
+    "id": 111,
     "title": "Capital Stack and European Capital",
     "file": "capital-stack.md",
     "x": 2085,
@@ -9,16 +9,79 @@
     "height": 50
   },
   {
-    "id": 12,
-    "title": "ESG Investing Incentives",
-    "file": "esg-incentives.md",
+    "id": 112,
+    "title": "ESG Funds",
+    "file": "esg-investing.md",
     "x": 2084,
     "y": 788,
     "width": 230,
     "height": 137
   },
   {
-    "id": 21,
+    "id": 113,
+    "title": "ESG Incentives",
+    "file": "esg-incentives.md",
+    "x": 2504,
+    "y": 754,
+    "width":184,
+    "height":216
+  },
+  {
+    "id": 114,
+    "title": "ESG Interest",
+    "file": "esg-interest.md",
+    "x": 2085,
+    "y": 973,
+    "width":226,
+    "height":48
+  },
+  {
+    "id": 121,
+    "title": "Tax Benefits",
+    "file": "tax-benefits.md",
+    "x": 2085,
+    "y": 1131,
+    "width":224,
+    "height":77
+  },
+  {
+    "id": 122,
+    "title": "Green Building Tax Credit",
+    "file": "tax-green-building.md",
+    "x": 2505,
+    "y": 1145,
+    "width":185,
+    "height":49
+  },
+  {
+    "id": 123,
+    "title": "Carbon Sequestration Tax Credit",
+    "file": "tax-sequestration.md",
+    "x": 2505,
+    "y": 1232,
+    "width":180,
+    "height":49
+  },
+  {
+    "id": 131,
+    "title": "Carbon Credits",
+    "file": "carbon-credits.md",
+    "x": 2086,
+    "y": 1354,
+    "width":225,
+    "height":36
+  },
+  {
+    "id": 132,
+    "title": "Voluntary Carbon Markets",
+    "file": "carbon-voluntary-market.md",
+    "x": 2282,
+    "y": 1528,
+    "width":187,
+    "height":55
+  },
+  {
+    "id": 211,
     "title": "European Sustainable Finance Disclosure",
     "file": "eu-disclosure.md",
     "x": 916,
@@ -27,12 +90,12 @@
     "height": 50
   },
   {
-    "id": 22,
+    "id": 212,
     "title": "European Multinational Corporation Disclosure",
     "file": "eu-multinational.md",
-    "x": 409,
-    "y": 550,
-    "width": 185,
-    "height": 75
+    "x": 915,
+    "y": 818,
+    "width": 227,
+    "height": 77
   }
 ]

@@ -1,2 +1,2 @@
 # ESG Investing
-ESG investing is an investment strategy that incorporates environmental, social, and governance (ESG) factors into the decision-making process alongside traditional financial metrics. The goal is to generate financial returns while also supporting projects that are sustainable and ethical.
+ESG investing is an investment strategy that incorporate environmental, social, and governance (ESG) factors into the decision-making process alongside traditional financial metrics. The goal is to generate financial returns while also supporting projects that are sustainable and ethical.

@@ -1,12 +1,12 @@
 # European Sustainable Finance Disclosure
-As of 2025, the EU has the most far-reaching sustainable finance disclosure regime globally. Two key components for financial institutions are the Sustainable Finance Disclosure Regulation (SFDR), which applies to EU financial market participants and advisers, and the Pillar III ESG disclosure requirements, which apply specifically to EU banks. In addition to pushing for better sustainability practices and reducing greenwashing, both sets of regulations aim to incorporate climate factors into risk assessment. **Related risks include asset devaluation from climate change events and from climate regulation changes. In both cases, such disclosures promote asset resiliency.**
+As of 2025, the EU has the most far-reaching sustainable finance disclosure regime globally. Two key components for financial institutions are the Sustainable Finance Disclosure Regulation (SFDR), which applies to EU financial market participants and advisers, and the Pillar III ESG disclosure requirements, which apply specifically to EU banks. In addition to pushing for better sustainability practices and reducing green-washing, both sets of regulations aim to incorporate climate factors into risk assessment. **Related risks include asset devaluation from climate change events and from climate regulation changes. In both cases, such disclosures promote asset resiliency.**
 
 ### Sustainable Finance Disclosure Regulation (SFDR)
 The Sustainable Finance Disclosure Regulation (SFDR) is a transparency framework first applied by the EU in 2021[^1][^2]. The framework requires market participants in the EU to disclose:
 1. How sustainability risks can affect the value of and return on investors' investments.
 2. How the project will affect the environment and society.
 
-Asset managers and other market participants managing assets on behalf of investors are required to inform investors of this information. These regulations apply to projects outside the EU if European investments are part of the project's [[11|capital stack]].
+Asset managers and other market participants managing assets on behalf of investors are required to inform investors of this information. These regulations apply to projects outside the EU if European investments are part of the project's [[111|capital stack]].
 
 ### Pillar III ESG Disclosures
 In 2022, the European Banking Authority (EBA) introduced ESG risks to its Pillar III[^5] disclosure requirements[^4]. The addition requires European banks to disclose:

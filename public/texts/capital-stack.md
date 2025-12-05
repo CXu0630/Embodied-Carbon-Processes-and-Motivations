@@ -2,12 +2,12 @@
 ![fig.1_capital_stack](images/capital_stack_subgraph.jpg)
 The capital stack in construction projects form a hierarchy that corresponds to both the quantity of a specific capital type and the capital's payment priority. Investors tend to gravitate towards portions of the stack that suit their appetite for risk and the amount of resources they have available to put in. Capital towards the bottom of the stack have lower interest rates but are paid first. [^1][^2]
 
-The priority of players in the capital stack can determine how much they care about carbon and for what reasons. Examples include funds that come from [[12|ESG investment]] and European capital, explained below.
+The priority of players in the capital stack can determine how much they care about carbon and for what reasons. Examples include funds that come from [[112|ESG investment]] and European capital, explained below.
 ![fig.2_capital_stack_tab](images/capital_stack_table.png)
 tab.1 capital stack details
 
 ### European Capital within the Capital Stack
-While the capital stack itself does little to push project expenditure on reducing carbon (rather it may encourage owners to spend less given budget constraints), European capital in US real estate highlights a potential leverage point. European banks (and capital in general) lead global [[12|ESG investment]].[^3] [[21|EU disclosure regulations]], among other factors, encourage European banks and capital to require the projects they invest in meet sustainability criteria. Projects that receive funding from European capital are thus more likely to set carbon reduction goals.
+While the capital stack itself does little to push project expenditure on reducing carbon (rather it may encourage owners to spend less given budget constraints), European capital in US real estate highlights a potential leverage point. European banks (and capital in general) lead global [[112|ESG investment]].[^3] [[211|EU disclosure regulations]], among other factors, encourage European banks and capital to require the projects they invest in meet sustainability criteria. Projects that receive funding from European capital are thus more likely to set carbon reduction goals.
 
 ### Extensions
 1. What kinds of projects are more likely to receive investments from European Capital?
